@@ -123,3 +123,42 @@ img {
 .dot.active {
     background-color: #717171;
 }
+
+
+/* TEST */
+.slideshow-container {
+    max-width: 800px; /* Set a max width for the slideshow */
+    height: 500px; /* Set a consistent height for all slides */
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    background-color: #f4f4f4; /* Optional: background color for empty space */
+}
+
+.mySlides img {
+    width: auto; /* Maintain aspect ratio */
+    height: 100%; /* Fit the image to the container's height */
+    object-fit: contain; /* Ensure the entire image is visible, even if aspect ratios vary */
+}
+
+/* Diagrams section images  */
+.diagram-container {
+    display: flex; /* Align images in a row */
+    flex-wrap: wrap; /* Allow wrapping to the next line if needed */
+    gap: 1rem; /* Add spacing between images */
+    justify-content: center; /* Center the images horizontally */
+    margin-top: 1rem;
+}
+
+.diagram-container img {
+    max-width: 100%; /* Ensure images are responsive */
+    max-height: 500px; /* Match slideshow height */
+    width: auto; /* Maintain aspect ratio */
+    height: 500px; /* Ensure images have consistent height */
+    object-fit: contain; /* Avoid distortion of images */
+    border: 1px solid #ddd; /* Optional: Add a border around images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow for better appearance */
+    background-color: #f4f4f4; /* Optional: Add background for transparency issues */
+    padding: 5px; /* Optional: Add padding inside the border */
+    border-radius: 4px; /* Optional: Slightly rounded corners */
+}
