@@ -16,11 +16,14 @@ header {
 }
 section {
     padding: 2rem;
-    margin: auto;
-    max-width: 800px;
+    /* margin: auto; */
+    
+    /* max-width: 800px; */
     flex: 1;
 
     text-align: left;
+    margin: 80px;
+    max-width: 100%;
 }
 footer {
     background-color: #333;
