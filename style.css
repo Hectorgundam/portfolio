@@ -175,3 +175,18 @@ img {
     padding: 5px; /* Optional: Add padding inside the border */
     border-radius: 4px; /* Optional: Slightly rounded corners */
 }
+
+.copy-box {
+    display: inline-block;
+    background-color: #F3F3F3;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+
+    cursor: pointer;
+    /* color: #007BFF; */
+    /* text-decoration: underline; */
+
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+
+}
