@@ -190,3 +190,44 @@ img {
     transition: background-color 0.2s ease, box-shadow 0.2s ease;
 
 }
+
+
+/* Mobile test */
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+    body {
+        display: block; /* Stack elements vertically */
+        padding: 0;
+    }
+
+    header {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    section {
+        padding: 1rem;
+        margin: 0; /* Remove large margins for smaller screens */
+        max-width: 100%; /* Ensure section spans the full width */
+    }
+
+    .slideshow-container {
+        max-width: 100%; /* Allow the slideshow to fit within the screen width */
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .diagram-container {
+        flex-direction: column; /* Stack images vertically */
+        gap: 0.5rem; /* Reduce spacing between images */
+    }
+
+    .diagram-container img {
+        max-width: 90%; /* Make images responsive within container */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    footer {
+        padding: 1rem;
+    }
+}
+
