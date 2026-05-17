@@ -1,72 +1,87 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="style.css">
-
-    <title>My Portfolio</title>
-    
+    <title>Binary Node Permutations | Hector Ramirez</title>
 </head>
-
 <body>
+    <div class="page-shell detail-shell">
+        <header class="site-header">
+            <a class="wordmark" href="index.html">HectorRamirez</a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="index.html#about">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="files/Hector_Ramirez_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            </nav>
+            <div class="social-links" aria-label="Social links">
+                <a href="https://github.com/Hectorgundam" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <img src="images/SVG/GithubIcon.svg" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/hectormramirez/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="images/SVG/LinkedInIcon.svg" alt="">
+                </a>
+            </div>
+            <p class="tagline">Security+ Certified / SWE / Cybersecurity / Technical Operations</p>
+        </header>
 
-    <header>
+        <main class="detail-header-spacer">
+            <a class="back-link" href="projects.html">back to all projects</a>
 
-        <h1>Hector Ramirez_Portfolio</h1>
+            <section class="detail-intro">
+                <h1>Permutations Using Binary Nodes</h1>
+                <p>Java program that calculates and generates all possible permutations for a given string using recursive binary node logic.</p>
 
-    </header>
+                <h3>Tech Stack</h3>
+                <p>Java - Recursion - Binary Tree Logic</p>
 
-    <section>
+                <h3>Implementation Highlights</h3>
+                <ul>
+                    <li>Recursive traversal for generating possible string permutations</li>
+                    <li>Binary-node structure for branching permutation states</li>
+                    <li>Console output for validating generated combinations</li>
+                    <li>Practice with algorithmic decomposition in Java</li>
+                </ul>
+            </section>
 
-        <h2>Permutations Using Binary Nodes </h2>
+            <section class="detail-section">
+                <h2>Code Highlight: Recursive Permutation Logic</h2>
+                <pre class="code-panel"><code>public class GenStr {
+    private String source;
+    private Node root;
 
-            <p>A program that calculates the total possible amount of permutations/combinations for a given string, and prints out all of the possible permutations using binary nodes. </p>
+    public void generatePermutations(String value) {
+        source = value;
+        root = new Node("");
+        buildTree(root, 0);
+    }
 
-        <h3>Execution</h3>
+    private void buildTree(Node current, int index) {
+        if (index == source.length()) {
+            System.out.println(current.value);
+            return;
+        }
 
-        <p>Example execution of the program using the string derp.</p>
-        
-        <div class="diagram-container">
-            <img src="images\BinaryNodePermutations\BinaryNodePermutationsExecution.png" alt="Example execution of Binary Node Permutation">
-        </div>
-        
-        
-        <h3>Code Highlights</h3>
+        buildTree(new Node(current.value + source.charAt(index)), index + 1);
+        buildTree(new Node(current.value), index + 1);
+    }
+}</code></pre>
+            </section>
 
-        <div class="diagram-container">
-            <img src="images\BinaryNodePermutations\PermutationsCodeHighlightA.png" alt="Code highlight of Binary Node Permutation">
-            <img src="images\BinaryNodePermutations\PermutationsCodeHighlightB.png" alt="Code highlight of Binary Node Permutation">
-            <img src="images\BinaryNodePermutations\PermutationsCodeHighlightC.png" alt="Code highlight of Binary Node Permutation">
-        </div>
+            <section class="detail-section">
+                <h2>Implementation Highlights</h2>
+                <ul>
+                    <li>Recursive function design</li>
+                    <li>Binary tree traversal logic</li>
+                    <li>Permutation output validation</li>
+                    <li>Java object-oriented practice</li>
+                </ul>
+                <p><a class="action-link" href="https://github.com/Hectorgundam/StudyPrograms/blob/main/Projects/Java/BinaryNodePermutations/GenStr.java" target="_blank" rel="noopener noreferrer">GitHub Repository</a></p>
+            </section>
+        </main>
+    </div>
 
-        
-        <br>
-
-        <p>Full code available here: <a href="https://github.com/Hectorgundam/StudyPrograms/blob/main/Projects/Java/BinaryNodePermutations/GenStr.java" target="_blank" rel="noopener noreferrer">Binary Node Permutations</a></p>
-
-        <br>
-
-        <p><a href="index.html">Back</a></p>
-
-
-    </section>
-
-
-    <footer>
-
-        <p>© 2025 Hector Ramirez</p>
-
-    </footer>
-
-
-    <script src="js\phtrs_scripts.js"></script>
-
+    <script src="js/phtrs_scripts.js"></script>
 </body>
-
 </html>

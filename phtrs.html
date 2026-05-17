@@ -1,158 +1,105 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="style.css">
-
-    <title>My Portfolio</title>
-    
+    <title>PHTRS | Hector Ramirez</title>
 </head>
-
 <body>
-
-    <header>
-
-        <h1>Hector Ramirez_Portfolio</h1>
-
-    </header>
-
-    <section>
-
-        <h2>PHTRS (Pothole Tracking and Repair System)</h2>
-
-        <p>A programming & product management project where I created the spec documentation, UI/GUI prototypes and system designs for an app 
-            designed to help manage pothole reports in a city.</p>
-
-        <h3>SRS or Spec Highlights</h3>
-
-        <p>Here's the final SRS document I created: <a href="https://github.com/Hectorgundam/portfolio/blob/main/files/SRS_PHTRS.pdf" target="_blank" rel="noopener noreferrer">SRS_PHTRS</a></p>
-
-        <p>Some highlights include:</p>
-
-        <h4>Product Function Summary</h4>
-
-        <p>This system aims to streamline and digitize the process of reporting, tracking, and repairing
-            potholes in a large city. The system does this by allowing users to report potholes for review,
-            creating traceable records for repair work orders as well as creating traceable records for
-            property damage caused by potholes.
-            This section describes in more detail the problem or need that is being addressed, and the
-            functionalities available to resolve it.</p>
-        <h4>Problem Statement</h4>
-        
-        <p>The Department of Public Works needs a more streamlined and efficient process to track and
-            report potholes in the city.
-            PHTRS streamlines the process of pothole repair by leveraging community feedback in reporting
-            both potholes and damages to their property caused by them. It also provides an organized and
-            traceable system to record pothole details, repair work orders, repair prioritization mechanisms,
-            and damage claims processing.</p>
-
-        <h3>UI/GUI Design Prototypes</h3>
-
-        <!-- Insert images here  -->
-
-        <div class="slideshow-container">
-
-            <!-- Slide 1 -->
-            <div class="mySlides fade">
-                <img src="images\PHTRS\InterfaceImages\00_PHTRS_Create Account.jpg" style="width:100%">
+    <div class="page-shell detail-shell">
+        <header class="site-header">
+            <a class="wordmark" href="index.html">HectorRamirez</a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="index.html#about">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="files/Hector_Ramirez_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            </nav>
+            <div class="social-links" aria-label="Social links">
+                <a href="https://github.com/Hectorgundam" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <img src="images/SVG/GithubIcon.svg" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/hectormramirez/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="images/SVG/LinkedInIcon.svg" alt="">
+                </a>
             </div>
-        
-            <!-- Slide 2 -->
-            <div class="mySlides fade">
-                <img src="images\PHTRS\InterfaceImages\02_PHTRS_Citizen Dashboard.jpg" style="width:100%">
-            </div>
-        
-            <!-- Slide 3 -->
-            <div class="mySlides fade">
-                <img src="images\PHTRS\InterfaceImages\03_PHTRS_Pothole Reporting_1.jpg" style="width:100%">
-            </div>
+            <p class="tagline">Security+ Certified / SWE / Cybersecurity / Technical Operations</p>
+        </header>
 
-            <!-- Slide 4 -->
-            <div class="mySlides fade">
-                <img src="images\PHTRS\InterfaceImages\15_PHTRS_Staff Work Order_Main.jpg" style="width:100%">
-            </div>
+        <main class="detail-header-spacer">
+            <a class="back-link" href="projects.html">back to all projects</a>
 
-            <!-- Slide 5 -->
-            <div class="mySlides fade">
-                <img src="images\PHTRS\InterfaceImages\18_PHTRS_Staff Work Order_3.jpg" style="width:100%">
-            </div>
-        
-            <!-- Next and Previous Buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        
-        <!-- Dots/Indicators -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
+            <section class="detail-intro">
+                <h1>PHTRS (Pothole Tracking &amp; Repair)</h1>
+                <p>Programming and product management project focused on designing a city wide pothole reporting and repair management platform.</p>
+                <p>Created system requirement documentation, UI/GUI prototypes, workflow planning, and functional system designs aimed at improving repair tracking, public reporting, and work order management processes.</p>
 
-        </div>
-        
-        <p>All interface prototype designs available here: <a href="https://github.com/Hectorgundam/portfolio/tree/main/images/PHTRS/InterfaceImages" target="_blank" rel="noopener noreferrer">PHTRS GUI/UI Prototype Designs</a></p>
+                <h3>Documentation &amp; Planning Highlights</h3>
+                <ul>
+                    <li>Created formal System Requirements Specification (SRS) documentation</li>
+                    <li>Designed UI/GUI prototypes and user workflows</li>
+                    <li>Planned reporting, prioritization, and repair tracking systems</li>
+                    <li>Defined processes for damage claims and work order management</li>
+                </ul>
 
-        <!-- Diagram Section Start  -->
+                <p><a class="action-link" href="files/SRS_PHTRS.pdf" target="_blank" rel="noopener noreferrer">View SRS Document</a></p>
+            </section>
 
-        <h3>Diagrams, Charts & Flowcharts</h3>
+            <section class="detail-section">
+                <h2>UI/GUI Design Prototypes</h2>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="images/PHTRS/InterfaceImages/00_PHTRS_Create Account.jpg" alt="PHTRS create account prototype">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/PHTRS/InterfaceImages/02_PHTRS_Citizen Dashboard.jpg" alt="PHTRS citizen dashboard prototype">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/PHTRS/InterfaceImages/03_PHTRS_Pothole Reporting_1.jpg" alt="PHTRS pothole reporting prototype">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/PHTRS/InterfaceImages/15_PHTRS_Staff Work Order_Main.jpg" alt="PHTRS staff work order prototype">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/PHTRS/InterfaceImages/18_PHTRS_Staff Work Order_3.jpg" alt="PHTRS staff work order detail prototype">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)" aria-label="Previous slide">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)" aria-label="Next slide">&#10095;</a>
+                </div>
+                <div>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+                <p><a class="action-link" href="https://github.com/Hectorgundam/portfolio/tree/main/images/PHTRS/InterfaceImages" target="_blank" rel="noopener noreferrer">PHTRS GUI/UI Prototype Designs</a></p>
+            </section>
 
-        <div class="diagram-container">
-            <img src="images\PHTRS\DFD\DFD_Levels1And2_PotholeReporting.png" alt="DFD for PHTRS">
-            <img src="images\PHTRS\ERD\PHTRS_ERD.png" alt="ERD for PHTRS">
-            <img src="images\PHTRS\Flowcharts\Flowchart2.png" alt="A flowchart for PHTRS">
-        </div>
+            <section class="detail-section">
+                <h2>Diagrams, Charts &amp; Flowcharts</h2>
+                <div class="diagram-grid">
+                    <a class="diagram-card" href="images/PHTRS/DFD/DFD_Levels1And2_PotholeReporting.png" target="_blank" rel="noopener noreferrer">
+                        <img src="images/PHTRS/DFD/DFD_Levels1And2_PotholeReporting.png" alt="PHTRS DFD design">
+                        <span>DFD Designs</span>
+                    </a>
+                    <a class="diagram-card" href="images/PHTRS/ERD/PHTRS_ERD.png" target="_blank" rel="noopener noreferrer">
+                        <img src="images/PHTRS/ERD/PHTRS_ERD.png" alt="PHTRS ERD design">
+                        <span>ERD Designs</span>
+                    </a>
+                    <a class="diagram-card" href="images/PHTRS/DataDictionary/PotholeRecord.png" target="_blank" rel="noopener noreferrer">
+                        <img src="images/PHTRS/DataDictionary/PotholeRecord.png" alt="PHTRS data dictionary design">
+                        <span>Flowchart Designs</span>
+                    </a>
+                    <a class="diagram-card" href="images/PHTRS/Flowcharts/Flowchart2.png" target="_blank" rel="noopener noreferrer">
+                        <img src="images/PHTRS/Flowcharts/Flowchart2.png" alt="PHTRS flowchart design">
+                        <span>Flowchart Designs</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
 
-        <p>DFD images available here: <a href="https://github.com/Hectorgundam/portfolio/tree/main/images/PHTRS/DFD" target="_blank" rel="noopener noreferrer">DFD Designs</a></p>
-        <p>ERD images available here: <a href="https://github.com/Hectorgundam/portfolio/tree/main/images/PHTRS/ERD" target="_blank" rel="noopener noreferrer">ERD Designs</a></p>
-        <p>Flowchart images available here: <a href="https://github.com/Hectorgundam/portfolio/tree/main/images/PHTRS/Flowcharts" target="_blank" rel="noopener noreferrer">Flowchart Designs</a></p>
-
-        <!-- Diagram Section End  -->
-
-        <!-- Dictionaries Section Start  -->
-        <h3>Data Dictionaries</h3>
-
-        <div class="diagram-container">
-            <img src="images\PHTRS\DataDictionary\CitizenRecord.png" alt="Data Dictionary for Citizen Record">
-            <img src="images\PHTRS\DataDictionary\PotholeRecord.png" alt="Data Dictionary for Pothole Record">
-            <img src="images\PHTRS\DataDictionary\WorkOrderRecord.png" alt="Data Dictionary for Work Order Record">
-        </div>
-
-        <p>All data dictionary designs available here: <a href="https://github.com/Hectorgundam/portfolio/tree/main/images/PHTRS/DataDictionary" target="_blank" rel="noopener noreferrer">Data Dictionaries</a></p>
-
-
-        <!-- Dictionaries Section Start  -->
-
-
-
-
-    
-        <br>
-
-        <p><a href="index.html">Back</a></p>
-
-
-
-    </section>
-
-  
-
-    <footer>
-
-        <p>© 2025 Hector Ramirez</p>
-
-    </footer>
-
-
-    <script src="js\phtrs_scripts.js"></script>
-
+    <script src="js/phtrs_scripts.js"></script>
 </body>
-
 </html>

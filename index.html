@@ -3,281 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio for Hector Ramirez Rios, Computer Science graduate, Security+ certified technologist, and software developer.">
+    <meta name="description" content="Portfolio for Hector Ramirez, Security+ certified computer science student focused on software engineering, cybersecurity, and technical operations.">
     <link rel="stylesheet" href="style.css">
-    <title>Hector Ramirez Rios | Portfolio</title>
+    <title>Hector Ramirez | Portfolio</title>
 </head>
 <body>
-    <main class="shell">
-        <aside class="profile-card" aria-label="Profile summary">
-            <div class="avatar" aria-hidden="true">HR</div>
-            <h1>Hector Ramirez</h1>
-            <p class="role">Security+ Certified</p>
-            <p class="role">Cybersecurity | IT | Computer Science</p>
-
-
-            <div class="profile-actions">
-                <a class="button primary" href="files/Hector_Ramirez_Resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
-                <button class="button ghost" type="button" data-toggle-contact>Show Contacts</button>
-            </div>
-
-            <div class="contact-panel" data-contact-panel>
-                <div>
-                    <span class="label">Location</span>
-                    <strong>New York, NY</strong>
-                </div>
-                <div>
-                    <span class="label">Email</span>
-                    <button class="link-button" type="button" data-copy="hectorgundam@gmail.com">hectorgundam@gmail.com</button>
-                </div>
-                <div>
-                    <span class="label">Phone</span>
-                    <a href="tel:+16468210191">Upon request</a>
-                </div>
-                <div>
-                    <span class="label">LinkedIn</span>
-                    <a href="https://www.linkedin.com/in/hectormramirez/" target="_blank" rel="noopener noreferrer">linkedin.com/in/hectormramirez</a>
-                </div>
-                <div>
-                    <span class="label">GitHub</span>
-                    <a href="https://github.com/Hectorgundam" target="_blank" rel="noopener noreferrer">github.com/Hectorgundam</a>
-                </div>
-            </div>
-        </aside>
-
-        <section class="content-card">
-            <nav class="tabs" aria-label="Portfolio sections">
-                <button class="tab is-active" type="button" data-tab="about">About</button>
-                <button class="tab" type="button" data-tab="resume">Resume</button>
-                <button class="tab" type="button" data-tab="projects">Projects</button>
-                <button class="tab" type="button" data-tab="contact">Contact</button>
+    <div class="page-shell home-shell">
+        <header class="site-header">
+            <a class="wordmark" href="index.html">HectorRamirez</a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="index.html#about">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="files/Hector_Ramirez_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
             </nav>
+            <div class="social-links" aria-label="Social links">
+                <a href="https://github.com/Hectorgundam" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <img src="images/SVG/GithubIcon.svg" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/hectormramirez/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="images/SVG/LinkedInIcon.svg" alt="">
+                </a>
+            </div>
+            <p class="tagline">Security+ Certified / SWE / Cybersecurity / Technical Operations</p>
+        </header>
 
-            <section class="panel is-active" id="about" data-panel="about">
-                <div class="section-heading">
-                    <p class="eyebrow">About Me</p>
-                    <h2>Building reliable software with an IT and cybersecurity mindset.</h2>
-                                           </div>
-
-                <p class="lead">I am a Computer Science student and CompTIA Security+ certified technologist with experience across software development, IT operations, technical support, and product-focused teamwork. I enjoy building useful applications, documenting systems clearly, and troubleshooting the messy parts that keep real software running.</p>
-
-                <div class="service-grid">
-                    <article class="service-card">
-                        <h3>Software Development</h3>
-                        <p>Java, Python, JavaScript, React, SQL, REST APIs, Firebase, MongoDB, MySQL, and project work from classroom systems to web apps.</p>
-                    </article>
-                    <article class="service-card">
-                        <h3>Cybersecurity & IT</h3>
-                        <p>Network security, access control, vulnerability management, incident response fundamentals, compliance documentation, and system monitoring.</p>
-                    </article>
-                    <article class="service-card">
-                        <h3>Product Collaboration</h3>
-                        <p>User research, prototyping, UI/UX feedback, code reviews, Agile workflows, technical documentation, and executive presentations.</p>
-                    </article>
-                    <article class="service-card">
-                        <h3>Operations Thinking</h3>
-                        <p>Workflow tracking, reporting accuracy, audit readiness, support tickets, and cross-functional process improvement.</p>
-                    </article>
-                </div>
-
-                <div class="stack-list" aria-label="Technology stack">
-                    <span>Python</span>
-                    <span>Java</span>
-                    <span>JavaScript</span>
-                    <span>React</span>
-                    <span>SQL</span>
-                    <span>Firebase</span>
-                    <span>MySQL</span>
-                    <span>GitHub</span>
-                    <span>JIRA</span>
-                    <span>Figma</span>
-                    <span>PowerBI</span>
-                    <span>Azure Fundamentals</span>
-                </div>
+        <main>
+            <section class="hero" id="about" aria-labelledby="hero-title">
+                <h1 id="hero-title">I build practical systems, automation tools, and security focused applications.</h1>
+                <p class="terminal-note"><span>#</span> Computer Science student focused on software engineering, cybersecurity, and technical operations.</p>
             </section>
 
-            <section class="panel" id="resume" data-panel="resume">
-                <div class="section-heading">
-                    <p class="eyebrow">Resume</p>
-                    <h2>Experience that connects software, support, and operations.</h2>
-                </div>
-
-                <div class="resume-layout">
-                    <div>
-                        <h3 class="subhead">Experience</h3>
-                        <ol class="timeline">
-                            <li>
-                                <span class="time">Jun 2024 - Aug 2024</span>
-                                <h4>Technologist Intern | Microsoft</h4>
-                                <p>Selected for Microsoft New Technologists Innovation Academy. Built a location-based React and Firebase web app with map search, participated in product lifecycle work, code reviews, Figma feedback, testing, and formal executive presentations.</p>
-                            </li>
-                            <li>
-                                <span class="time">Feb 2022 - Jul 2023</span>
-                                <h4>Software Engineer Support Intern | iTalent Digital</h4>
-                                <p>Developed and maintained Java and C++ features, documented defects, supported backend troubleshooting, executed unit and regression tests, and collaborated through JIRA, Confluence, and Agile workflows.</p>
-                            </li>
-                            <li>
-                                <span class="time">Oct 2018 - Feb 2022</span>
-                                <h4>Banking Operations Project Manager | National Debt Relief</h4>
-                                <p>Managed process documentation, reporting, issue tracking, audit readiness, compliance workflows, and cross-functional business requirements across HR, Legal, IT, and operations teams.</p>
-                            </li>
-                        </ol>
-                    </div>
-
-                    <div>
-                        <h3 class="subhead">Education & Certification</h3>
-                        <ol class="timeline compact">
-                            <li>
-                                <span class="time">Jan 2022 - Jul 2026</span>
-                                <h4>B.S. Computer Science</h4>
-                                <p>Inter American University of Puerto Rico, Aguadilla. GPA 3.72, Dean's List.</p>
-                            </li>
-                            <li>
-                                <span class="time">Issued Jan 2026</span>
-                                <h4>CompTIA Security+ SY0-701</h4>
-                                <p>Expires Jan 2029.</p>
-                            </li>
-                        </ol>
-
-                        <h3 class="subhead">Core Strengths</h3>
-                        <div class="skill-columns">
-                            <div>
-                                <h4>Cybersecurity & IT</h4>
-                                <p>Risk management, access control, vulnerability management, incident response fundamentals, troubleshooting.</p>
-                            </div>
-                            <div>
-                                <h4>Development</h4>
-                                <p>Python, Java, JavaScript, SQL, HTML, CSS, React, PHP, C, C++, C#, Django, REST APIs.</p>
-                            </div>
-                            <div>
-                                <h4>Platforms</h4>
-                                <p>Git, GitHub, Firebase, MongoDB, MySQL, Visual Studio, PowerBI, Figma, Bootstrap, Salesforce.</p>
-                            </div>
+            <section class="featured-section" aria-labelledby="featured-title">
+                <h2 id="featured-title">Featured Projects</h2>
+                <div class="featured-grid">
+                    <a class="feature-project" href="ItsInMyBacklog.html">
+                        <span class="project-kicker">product _ systems design</span>
+                        <img src="images/ProjectHighlights/ItsInMyBacklogHighlight.png" alt="Interface preview for It's In My Backlog placeholder">
+                        <div class="feature-copy">
+                            <h3>ItsInMyBacklog</h3>
+                            <p>Collection and progress tracking platform designed for model kit builders to organize their backlog and customization workflow.</p>
                         </div>
-                    </div>
-                </div>
-            </section>
+                    </a>
 
-            <section class="panel" id="projects" data-panel="projects">
-                <div class="section-heading">
-                    <p class="eyebrow">Projects</p>
-                    <h2>Selected work and experiments.</h2>
-                </div>
-
-                <div class="filter-row" aria-label="Project filters">
-                    <button class="filter is-active" type="button" data-filter="all">All</button>
-                    <button class="filter" type="button" data-filter="web">Web Apps</button>
-                    <button class="filter" type="button" data-filter="java">Java</button>
-                    <button class="filter" type="button" data-filter="python">Python</button>
-                    <button class="filter" type="button" data-filter="systems">Systems</button>
-                </div>
-
-                <div class="project-grid">
-                    <article class="project-card" data-category="web systems">
-                        <img src="images/PHTRS/InterfaceImages/02_PHTRS_Citizen Dashboard.jpg" alt="PHTRS citizen dashboard interface">
-                        <div>
-                            <span class="project-type">Product + Systems Design</span>
-                            <h3>PHTRS</h3>
+                    <a class="feature-project feature-project-wide" href="phtrs.html">
+                        <span class="project-kicker">product _ systems design</span>
+                        <img src="images/ProjectHighlights/PotholeTrackerHighlight.png" alt="PHTRS account creation interface">
+                        <div class="feature-copy">
+                            <h3>Pothole Tracking</h3>
                             <p>Pothole tracking and repair system with SRS documentation, interface prototypes, flowcharts, ERDs, DFDs, and data dictionaries.</p>
-                            <a href="phtrs.html">View case study</a>
                         </div>
-                    </article>
-
-                    <article class="project-card" data-category="java systems">
-                        <img src="images/MovieRentalSystem/MovieRentalSystem_CodeHighlight_1.png" alt="Movie Rental System Java code highlight">
-                        <div>
-                            <span class="project-type">Java + MySQL</span>
-                            <h3>Movie Rental System</h3>
-                            <p>Database-backed Java application for renting movies from available stock, built to practice UI-to-database workflows.</p>
-                            <a href="movieRentalSystem.html">View project</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card" data-category="java">
-                        <img src="images/BinaryNodePermutations/BinaryNodePermutationsExecution.png" alt="Binary node permutations program execution">
-                        <div>
-                            <span class="project-type">Java Algorithms</span>
-                            <h3>Binary Node Permutations</h3>
-                            <p>Program that calculates and prints possible permutations for a string using binary nodes.</p>
-                            <a href="permutations.html">View project</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card" data-category="python">
-                        <img src="images/FileSorter/FileSorterCodeHighlightA.png" alt="Python file sorter code highlight">
-                        <div>
-                            <span class="project-type">Python Automation</span>
-                            <h3>Automatic File Sorter</h3>
-                            <p>Utility project for organizing a messy downloads folder by sorting files into useful categories.</p>
-                            <a href="filesorter.html">View project</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card" data-category="web">
-                        <div class="project-placeholder">IB</div>
-                        <div>
-                            <span class="project-type">Firebase Web App</span>
-                            <h3>It's In My Backlog</h3>
-                            <p>Passion project for model kit builders to manage their backlog, tools, paints, and build progress.</p>
-                            <a href="ItsInMyBacklog.html">View project</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card" data-category="systems">
-                        <div class="project-placeholder">MT</div>
-                        <div>
-                            <span class="project-type">Pathfinding</span>
-                            <h3>Maze Traversal</h3>
-                            <p>Class assignment that reads a labyrinth file, finds the shortest path, and generates a VRML visualization.</p>
-                            <a href="mazeTraversal.html">View project</a>
-                        </div>
-                    </article>
+                    </a>
                 </div>
+
+                <a class="more-link" href="projects.html" aria-label="View more projects">
+                    <span aria-hidden="true"></span>
+                    more projects
+                </a>
             </section>
-
-            <section class="panel" id="contact" data-panel="contact">
-                <div class="section-heading">
-                    <p class="eyebrow">Contact</p>
-                    <h2>Let’s connect.</h2>
-                </div>
-
-                <div class="contact-grid">
-                    <a class="contact-tile" href="mailto:hectorgundam@gmail.com">
-                        <span>Email</span>
-                        <strong>hectorgundam@gmail.com</strong>
-                    </a>
-                    <a class="contact-tile" href="https://www.linkedin.com/in/hectormramirez/" target="_blank" rel="noopener noreferrer">
-                        <span>LinkedIn</span>
-                        <strong>hectormramirez</strong>
-                    </a>
-                    <a class="contact-tile" href="https://github.com/Hectorgundam" target="_blank" rel="noopener noreferrer">
-                        <span>GitHub</span>
-                        <strong>Hectorgundam</strong>
-                    </a>
-                </div>
-
-                <form class="contact-form" action="mailto:hectorgundam@gmail.com" method="post" enctype="text/plain">
-                    <label>
-                        Name
-                        <input type="text" name="name" autocomplete="name">
-                    </label>
-                    <label>
-                        Email
-                        <input type="email" name="email" autocomplete="email">
-                    </label>
-                    <label>
-                        Message
-                        <textarea name="message" rows="5"></textarea>
-                    </label>
-                    <button class="button primary" type="submit">Send Message</button>
-                </form>
-            </section>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <p>&copy; 2026 Hector Ramirez Rios</p>
-    </footer>
+        </main>
+    </div>
 
     <script src="js/phtrs_scripts.js"></script>
 </body>

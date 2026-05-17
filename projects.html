@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Hector Ramirez across web applications, Java, Python automation, and systems design.">
+    <link rel="stylesheet" href="style.css">
+    <title>Projects | Hector Ramirez</title>
+</head>
+<body>
+    <div class="page-shell projects-shell">
+        <header class="site-header">
+            <a class="wordmark" href="index.html">HectorRamirez</a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="index.html#about">About</a>
+                <a href="projects.html" aria-current="page">Projects</a>
+                <a href="files/Hector_Ramirez_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            </nav>
+            <div class="social-links" aria-label="Social links">
+                <a href="https://github.com/Hectorgundam" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <img src="images/SVG/GithubIcon.svg" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/hectormramirez/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="images/SVG/LinkedInIcon.svg" alt="">
+                </a>
+            </div>
+            <p class="tagline">Security+ Certified / SWE / Cybersecurity / Technical Operations</p>
+        </header>
+
+        <main>
+            <nav class="project-filters" aria-label="Project filters">
+                <button class="filter is-active" type="button" data-filter="all">All Projects</button>
+                <button class="filter" type="button" data-filter="web">Web Apps</button>
+                <button class="filter" type="button" data-filter="java">Java</button>
+                <button class="filter" type="button" data-filter="python">Python</button>
+                <button class="filter" type="button" data-filter="systems">Systems</button>
+            </nav>
+
+            <section class="project-list" aria-label="Project list">
+                <a class="project-row" href="ItsInMyBacklog.html" data-category="web systems">
+                    <span class="project-kicker">firebase web app</span>
+                    <img src="images/ProjectHighlights/ItsInMyBacklogHighlight.png" alt="Interface preview placeholder for ItsInMyBacklog">
+                    <div>
+                        <h2>ItsInMyBacklog</h2>
+                        <p>Collection and progress tracking platform designed for model kit builders to organize their backlog and customization workflow.</p>
+                    </div>
+                </a>
+
+                <a class="project-row" href="phtrs.html" data-category="systems">
+                    <span class="project-kicker">product _ systems design</span>
+                    <img src="images/ProjectHighlights/PotholeTrackerHighlight.png" alt="PHTRS account creation prototype">
+                    <div>
+                        <h2>Pothole Tracking</h2>
+                        <p>Pothole tracking and repair system with SRS documentation, interface prototypes, flowcharts, ERDs, DFDs, and data dictionaries.</p>
+                    </div>
+                </a>
+
+                <a class="project-row" href="filesorter.html" data-category="python">
+                    <span class="project-kicker">python automation</span>
+                    <img src="images/ProjectHighlights/FileSorterHighlight.png" alt="Python file sorter code">
+                    <div>
+                        <h2>Automatic File Sorter</h2>
+                        <p>Utility project for organizing a messy downloads folder by sorting files into useful categories.</p>
+                    </div>
+                </a>
+
+                <a class="project-row" href="permutations.html" data-category="java">
+                    <span class="project-kicker">java algorithms</span>
+                    <img src="images/ProjectHighlights/BinaryPermutationHighlight.png" alt="Binary node permutations execution output">
+                    <div>
+                        <h2>Binary Node Permutations</h2>
+                        <p>Program that calculates and prints possible permutations for a string using binary nodes.</p>
+                    </div>
+                </a>
+
+                <a class="project-row" href="movieRentalSystem.html" data-category="java systems">
+                    <span class="project-kicker">java _ mysql</span>
+                    <img src="images/ProjectHighlights/MovieRentalDBHighlight.png" alt="Movie rental system Java code">
+                    <div>
+                        <h2>Movie Rental System</h2>
+                        <p>Database-backed Java application for renting movies from available stock, built to practice UI-to-database workflows.</p>
+                    </div>
+                </a>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/phtrs_scripts.js"></script>
+</body>
+</html>
