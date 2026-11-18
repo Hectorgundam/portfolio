@@ -482,18 +482,27 @@ img {
 }
 
 @media (max-width: 1180px) {
+    .home-shell,
+    .projects-shell,
+    .detail-shell {
+        padding-bottom: 120px;
+    }
+
     .site-header {
         grid-template-columns: 1fr;
         justify-items: start;
+        row-gap: 18px;
     }
 
     .site-nav {
         justify-content: flex-start;
+        gap: 14px;
     }
 
     .featured-grid,
     .project-list {
         grid-template-columns: 1fr;
+        gap: 76px;
     }
 
     .feature-project,
@@ -502,6 +511,16 @@ img {
         grid-template-columns: minmax(220px, 360px) minmax(220px, 1fr);
         padding-left: 0;
         border-left: 0;
+        padding-right: 0;
+        border-right: 0;
+    }
+
+    .project-list {
+        row-gap: 86px;
+    }
+
+    .project-row {
+        max-width: 860px;
     }
 }
 
@@ -513,21 +532,64 @@ img {
     .home-shell,
     .projects-shell,
     .detail-shell {
-        padding-top: 36px;
+        padding: 32px 0 88px;
+    }
+
+    .wordmark {
+        width: 100%;
+        max-width: 100%;
+        font-size: clamp(1.9rem, 10vw, 3rem);
+        overflow-wrap: anywhere;
+    }
+
+    .site-header {
+        row-gap: 16px;
+    }
+
+    .site-nav {
+        width: 100%;
+        gap: 10px;
     }
 
     .site-nav a,
     .action-link {
-        padding: 8px 14px;
-        font-size: 0.95rem;
+        min-height: 42px;
+        padding: 10px 12px;
+        font-size: 0.92rem;
+    }
+
+    .site-nav a {
+        flex: 1 1 auto;
     }
 
     .social-links a {
-        width: 32px;
+        width: 34px;
+    }
+
+    .tagline {
+        font-size: clamp(0.9rem, 4vw, 1.12rem);
     }
 
     .hero {
-        margin-top: 70px;
+        margin-top: 62px;
+    }
+
+    .hero h1 {
+        font-size: clamp(1.75rem, 8.5vw, 2.55rem);
+    }
+
+    .terminal-note {
+        margin-top: 24px;
+        font-size: clamp(1rem, 5vw, 1.35rem);
+    }
+
+    .featured-section {
+        margin-top: 62px;
+    }
+
+    .featured-section h2,
+    .detail-section h2 {
+        margin-bottom: 28px;
     }
 
     .featured-grid,
@@ -543,7 +605,130 @@ img {
         border-right: 0;
     }
 
+    .featured-grid,
+    .project-list {
+        gap: 58px;
+    }
+
+    .feature-project,
+    .feature-project-wide,
+    .project-row {
+        gap: 20px;
+    }
+
+    .project-kicker {
+        position: static;
+        display: block;
+        margin-bottom: 10px;
+        font-size: 0.86rem;
+    }
+
+    .feature-copy h3,
+    .project-row h2 {
+        margin-bottom: 12px;
+    }
+
+    .feature-copy p,
+    .project-row p,
+    .detail-intro p,
+    .detail-section p,
+    .detail-section li {
+        font-size: clamp(0.92rem, 4vw, 1.05rem);
+        overflow-wrap: anywhere;
+    }
+
+    .more-link {
+        margin-top: 52px;
+        font-size: 1.12rem;
+    }
+
+    .more-link span {
+        width: 28px;
+        height: 42px;
+    }
+
     .project-filters {
-        margin: 72px 0;
+        flex-wrap: nowrap;
+        gap: 22px;
+        margin: 62px 0 70px;
+        padding-bottom: 10px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+    }
+
+    .filter {
+        flex: 0 0 auto;
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+
+    .detail-header-spacer {
+        margin-top: 62px;
+    }
+
+    .back-link {
+        margin-bottom: 54px;
+    }
+
+    .detail-intro h1 {
+        font-size: clamp(1.65rem, 8vw, 2.25rem);
+    }
+
+    .detail-section {
+        margin-top: 72px;
+    }
+
+    .code-panel {
+        padding: 22px 16px;
+    }
+
+    .prev,
+    .next {
+        width: 36px;
+        font-size: 1.55rem;
+    }
+
+    .dot {
+        width: 12px;
+        height: 12px;
+        margin: 0 3px;
+    }
+
+    .diagram-card span {
+        min-width: min(230px, calc(100% - 28px));
+        font-size: 0.92rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .page-shell,
+    .site-footer {
+        width: min(100% - 22px, var(--content));
+    }
+
+    .site-nav {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .site-nav a {
+        min-width: 0;
+        padding-inline: 8px;
+        font-size: 0.82rem;
+    }
+
+    .social-links {
+        gap: 18px;
+    }
+
+    .project-filters {
+        margin-top: 54px;
+    }
+
+    .slideshow-container,
+    .prototype-frame {
+        margin-left: -11px;
+        width: calc(100% + 22px);
     }
 }
